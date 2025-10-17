@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I AM KAZAK - books.buckjones.net</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2563eb',
+secondary: '#64748b'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+.hero-video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+}
+.hero-overlay {
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.book-shadow {
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.text-shadow {
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+      <div class="w-full px-6 py-4">
+      <div class="flex items-center justify-between">
+      <div class="font-['Pacifico'] text-2xl text-gray-800">
+      books.buckjones.net
+          </div>
+          <nav class="flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+          <a href="#book" class="text-gray-700 hover:text-primary transition-colors">Book</a>
+          <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+          <a href="#" class="flex items-center text-gray-700 hover:text-primary transition-colors">
+          <div class="w-5 h-5 flex items-center justify-center mr-2">
+          <i class="ri-shopping-cart-line"></i>
+      </div>
+      Cart
+      </a>
+      </nav>
+      </div>
+      </div>
+</header>
+
+<!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <video autoplay muted loop class="hero-video">
+    <source src="https://books.buckjones.net/images/Kazak-vid.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative z-10 text-center text-white px-6 max-w-4xl">
+    <h1 class="text-6xl md:text-8xl font-bold mb-6 text-shadow">I AM KAZAK</h1>
+    <p class="text-xl md:text-2xl mb-8 text-shadow max-w-2xl mx-auto">
+    A powerful journey of identity, resilience, and the untold stories that shape who we become
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+    Buy Now - $24.99
+    </button>
+    <button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors whitespace-nowrap">
+    Preview Book
+    </button>
+    </div>
+    </div>
+</section>
+
+<!-- Featured Book Showcase -->
+<section id="book" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="flex justify-center">
+        <div class="book-shadow">
+        <img
+        src="https://readdy.ai/api/search-image?query=Professional%20book%20cover%20design%20for%20I%20AM%20KAZAK%20featuring%20bold%20typography%20and%20minimalist%20design%20with%20deep%20blue%20and%20gold%20accents%2C%20clean%20modern%20aesthetic%2C%20bestseller%20quality&width=400&height=600&seq=book001&orientation=portrait"
+        alt="I AM KAZAK Book Cover"
+        class="w-80 h-auto object-cover rounded-lg"
+        >
+        </div>
+        </div>
+        <div class="space-y-6">
+        <h2 class="text-5xl font-bold text-gray-900">I AM KAZAK</h2>
+        <p class="text-xl text-gray-600">by Buck Jones</p>
+        <div class="text-3xl font-bold text-primary">$24.99</div>
+        <p class="text-lg text-gray-700 leading-relaxed">
+        An extraordinary memoir that delves deep into the complexities of cultural identity and personal transformation.
+        Through vivid storytelling and raw honesty, this book explores the journey of self-discovery in a world that
+        constantly challenges who we think we are.
+        </p>
+        <div class="flex items-center space-x-4 mb-6">
+        <div class="flex text-yellow-400">
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        </div>
+        <span class="text-gray-600">(127 reviews)</span>
+        </div>
+        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+        <label class="text-gray-700 font-medium">Quantity:</label>
+        <div class="flex items-center border border-gray-300 rounded">
+        <button class="px-3 py-2 hover:bg-gray-100">-</button>
+        <input type="number" value="1" min="1" class="w-16 text-center border-none py-2">
+        <button class="px-3 py-2 hover:bg-gray-100">+</button>
+        </div>
+        </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+        <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+        Add to Cart
+        </button>
+        <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 !rounded-button text-lg font-semibold hover:bg-gray-50 transition-colors whitespace-nowrap">
+        Preview Pages
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+</section>
+
+<!-- About the Book -->
+<section class="py-20 px-6 bg-gray-50">
+          <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">About the Book</h2>
+          <div class="prose prose-lg mx-auto text-gray-700">
+          <p class="text-xl leading-relaxed mb-8">
+          "I AM KAZAK" is more than just a memoir—it's a profound exploration of what it means to belong in a world
+          that often feels foreign. Through intimate storytelling and unflinching honesty, Buck Jones takes readers
+          on a journey through the landscapes of identity, heritage, and the courage required to define oneself.
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+          This powerful narrative weaves together themes of cultural displacement, family legacy, and personal resilience.
+          Jones masterfully captures the tension between honoring one's roots and forging a new path, creating a story
+          that resonates with anyone who has ever questioned where they truly belong.
+          </p>
+          <p class="text-lg leading-relaxed">
+          With lyrical prose and raw emotional depth, "I AM KAZAK" offers readers not just a story, but a mirror
+          in which to examine their own journey of self-discovery. It's a testament to the power of embracing
+          one's authentic self, regardless of the challenges that may arise.
+          </p>
+          </div>
+          </div>
+          </section>
+
+          <!-- Reviews Section -->
+          <section id="reviews" class="py-20 px-6">
+          <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">What Readers Are Saying</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Review 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          </div>
+          <span class="text-gray-500 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "This book completely transformed my perspective on identity and belonging. Buck Jones writes with such raw honesty and emotional depth."
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">MJ</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">Michael Johnson</h4>
+          <p class="text-gray-500 text-sm">Verified Reader</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          </div>
+          <span class="text-gray-500 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "A powerful exploration of cultural identity that stayed with me long after I finished reading. Highly recommended!"
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">SR</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">Sarah Roberts</h4>
+          <p class="text-gray-500 text-sm">Book Club Member</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+          </div>
+          <span class="text-gray-500 text-sm">4.5</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "Jones masterfully weaves personal narrative with universal themes. A must-read for anyone interested in memoirs."
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">DP</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">David Park</h4>
+          <p class="text-gray-500 text-sm">Literary Critic</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          </div>
+          <span class="text-gray-500 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "I couldn't put this book down! The storytelling is captivating and the insights are profound."
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">EC</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">Emma Chen</h4>
+          <p class="text-gray-500 text-sm">Book Blogger</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-line"></i>
+          </div>
+          <span class="text-gray-500 text-sm">4.0</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "A thoughtful exploration of identity that raises important questions about heritage and self-discovery."
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">TW</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">Thomas Wright</h4>
+          <p class="text-gray-500 text-sm">Professor of Literature</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+          <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-4">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          </div>
+          <span class="text-gray-500 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+          "This memoir resonated with me on so many levels. Beautifully written and deeply moving."
+          </p>
+          <div class="flex items-center">
+          <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+          <span class="text-gray-700 font-semibold">LM</span>
+          </div>
+          <div>
+          <h4 class="font-semibold text-gray-800">Lisa Martinez</h4>
+          <p class="text-gray-500 text-sm">Verified Reader</p>
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="text-center mt-12">
+          <button class="bg-primary text-white px-8 py-3 !rounded-button font-semibold hover:bg-blue-700 transition-colors">
+          See More Reviews
+          </button>
+          </div>
+          </div>
+</section>
+
+<!-- Author Section -->
+<section id="about" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+        <h2 class="text-4xl font-bold text-gray-900 mb-8">Meet the Author</h2>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Buck Jones</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        Buck Jones is an acclaimed author and storyteller whose work explores themes of identity, belonging,
+        and cultural heritage. With a background in journalism and creative writing, Jones brings a unique
+        perspective to contemporary memoir writing.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        His previous works have been featured in numerous literary magazines and anthologies. "I AM KAZAK"
+        marks his debut as a published book author, drawing from his own experiences and extensive research
+        into cultural identity and personal transformation.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+        When not writing, Buck enjoys traveling, photography, and connecting with readers through book clubs
+        and literary events. He currently resides in the Pacific Northwest, where he continues to work on
+        his next book.
+        </p>
+        </div>
+        <div class="flex justify-center">
+        <img
+        src="https://i.postimg.cc/LsgBwD65/IMG-20140710-094359.jpg"
+        alt="Buck Jones - Author"
+        class="w-80 h-96 object-cover rounded-lg shadow-lg"
+        >
+        </div>
+        </div>
+        </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Contact Us</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+      <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
+      <p class="text-lg text-gray-700 leading-relaxed mb-6">
+      Have questions about the book, interested in bulk orders, or want to invite Buck Jones for a speaking engagement? We'd love to hear from you.
+      </p>
+      <div class="space-y-4">
+      <div class="flex items-start">
+      <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+      <i class="ri-map-pin-line text-primary"></i>
+      </div>
+      <div>
+      <h4 class="font-semibold text-gray-800">Address</h4>
+      <p class="text-gray-600">123 Book Street, Seattle, WA 98101</p>
+      </div>
+      </div>
+      <div class="flex items-start">
+      <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+      <i class="ri-mail-line text-primary"></i>
+      </div>
+      <div>
+      <h4 class="font-semibold text-gray-800">Email</h4>
+      <p class="text-gray-600">info@books.buckjones.net</p>
+      </div>
+      </div>
+      <div class="flex items-start">
+      <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+      <i class="ri-phone-line text-primary"></i>
+      </div>
+      <div>
+      <h4 class="font-semibold text-gray-800">Phone</h4>
+      <p class="text-gray-600">+1 (555) 123-4567</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-lg">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send a Message</h3>
+      <form class="space-y-6">
+      <div>
+      <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+      <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your name">
+      </div>
+      <div>
+      <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+      <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email">
+      </div>
+      <div>
+      <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+      <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter subject">
+      </div>
+      <div>
+      <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+      <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-blue-700 transition-colors">
+      Send Message
+      </button>
+      </form>
+      </div>
+      </div>
+      </div>
+</section>
+
+<!-- Purchase Options -->
+<section class="py-20 px-6 bg-gray-50">
+          <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-gray-900 mb-12">Get Your Copy Today</h2>
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-primary/10 rounded-full">
+          <i class="ri-book-line text-primary text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Paperback</h3>
+          <div class="text-2xl font-bold text-primary mb-4">$24.99</div>
+          <p class="text-gray-600 mb-6">Physical book with premium paper quality and professional binding</p>
+          <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+          Add to Cart
+          </button>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-primary">
+          <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-primary/10 rounded-full">
+          <i class="ri-smartphone-line text-primary text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Digital Edition</h3>
+          <div class="text-2xl font-bold text-primary mb-4">$14.99</div>
+          <p class="text-gray-600 mb-6">Instant download in PDF, EPUB, and MOBI formats</p>
+          <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+          Buy Digital
+          </button>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-primary/10 rounded-full">
+          <i class="ri-headphone-line text-primary text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Audiobook</h3>
+          <div class="text-2xl font-bold text-primary mb-4">$19.99</div>
+          <p class="text-gray-600 mb-6">Narrated by the author, 8 hours of compelling storytelling</p>
+          <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+          Coming Soon
+          </button>
+          </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6">Secure Checkout Options</h3>
+          <div class="flex justify-center items-center space-x-8 mb-6">
+          <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-bank-card-line text-2xl text-gray-600"></i>
+          </div>
+          <span class="text-gray-700">Credit/Debit Cards</span>
+          </div>
+          <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-paypal-fill text-2xl text-blue-600"></i>
+          </div>
+          <span class="text-gray-700">PayPal</span>
+          </div>
+          <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-bank-line text-2xl text-gray-600"></i>
+          </div>
+          <span class="text-gray-700">Bank Transfer</span>
+          </div>
+          </div>
+          <p class="text-gray-600">
+          Free shipping on orders over $25 • 30-day money-back guarantee • Secure SSL encryption
+          </p>
+          </div>
+          </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8">
+        <div>
+        <div class="font-['Pacifico'] text-2xl mb-4">books.buckjones.net</div>
+        <p class="text-gray-400">
+        Your destination for compelling stories and transformative literature.
+        </p>
+        </div>
+        <div>
+        <h4 class="font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="#book" class="hover:text-white transition-colors">Books</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+        </div>
+        <div>
+        <h4 class="font-semibold mb-4">Support</h4>
+        <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+        </ul>
+        </div>
+        <div>
+        <h4 class="font-semibold mb-4">Connect</h4>
+        <div class="flex space-x-4">
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition-colors">
+        <i class="ri-facebook-line"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition-colors">
+        <i class="ri-twitter-line"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition-colors">
+        <i class="ri-instagram-line"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition-colors">
+        <i class="ri-linkedin-line"></i>
+        </a>
+        </div>
+        </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 books.buckjones.net. All rights reserved.</p>
+        </div>
+        </div>
+</footer>
+
+<script id="quantity-controls">
+document.addEventListener('DOMContentLoaded', function() {
+const quantityInputs = document.querySelectorAll('input[type="number"]');
+quantityInputs.forEach(input => {
+const decreaseBtn = input.previousElementSibling;
+const increaseBtn = input.nextElementSibling;
+decreaseBtn.addEventListener('click', function() {
+const currentValue = parseInt(input.value);
+if (currentValue > 1) {
+input.value = currentValue - 1;
+}
+});
+increaseBtn.addEventListener('click', function() {
+const currentValue = parseInt(input.value);
+input.value = currentValue + 1;
+});
+});
+});
+</script>
+
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+
+<script id="video-optimization">
+document.addEventListener('DOMContentLoaded', function() {
+const video = document.querySelector('.hero-video');
+if (video) {
+video.addEventListener('loadeddata', function() {
+video.play();
+});
+// Pause video when not in viewport to save resources
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+video.play();
+} else {
+video.pause();
+}
+});
+});
+observer.observe(video);
+}
+});
+</script>
+</body>
+</html>
